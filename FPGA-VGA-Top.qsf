@@ -99,3 +99,5 @@ set_global_assignment -name BDF_FILE "Library/Primitives/Nor-primitive.bdf"
 set_global_assignment -name BDF_FILE "Library/Primitives/And3-primitive.bdf"
 set_global_assignment -name BDF_FILE "Library/Components/74193-4Bit-Counter.bdf"
 set_global_assignment -name BDF_FILE "Library/Primitives/And5-primitive.bdf"
+set_global_assignment -name BDF_FILE Library/Components/10mhz_clock.bdf
+set_global_assignment -name BDF_FILE Library/Components/1hz_clock.bdf
