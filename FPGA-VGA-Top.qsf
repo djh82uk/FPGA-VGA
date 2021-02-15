@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "MAX II"
-set_global_assignment -name DEVICE EPM240M100C5
+set_global_assignment -name DEVICE EPM240T100C5
 set_global_assignment -name TOP_LEVEL_ENTITY "FPGA-VGA-Top"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:17:13  FEBRUARY 15, 2021"
@@ -60,7 +60,6 @@ set_global_assignment -name SEARCH_PATH "c:\\users\\djh\\documents\\github\\fpga
 set_global_assignment -name BDF_FILE "Library/Components/RamCell-16B.bdf"
 set_global_assignment -name BDF_FILE Library/Components/RAM.bdf
 set_global_assignment -name BDF_FILE "Library/Components/8-Bit-Register.bdf"
-set_global_assignment -name BDF_FILE Library/Components/1mhz_clock.bdf
 set_global_assignment -name BDF_FILE Library/Intermediates/Tri8.bdf
 set_global_assignment -name BDF_FILE Library/Intermediates/SimpleDFlipFlop.bdf
 set_global_assignment -name BDF_FILE Library/Intermediates/Or16.bdf
@@ -101,3 +100,8 @@ set_global_assignment -name BDF_FILE "Library/Components/74193-4Bit-Counter.bdf"
 set_global_assignment -name BDF_FILE "Library/Primitives/And5-primitive.bdf"
 set_global_assignment -name BDF_FILE Library/Components/10mhz_clock.bdf
 set_global_assignment -name BDF_FILE Library/Components/1hz_clock.bdf
+set_global_assignment -name BDF_FILE "Library/Components/Half-Hz_clock.bdf"
+set_global_assignment -name BDF_FILE "Library/50Mhz Clock Divider/divby8.bdf"
+set_global_assignment -name BDF_FILE Library/Components/ZeroPoint625Hz_clock.bdf
+set_location_assignment PIN_77 -to ModCLK
+set_location_assignment PIN_12 -to CLK
