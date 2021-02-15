@@ -1,0 +1,101 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 02:17:13  February 15, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		FPGA-VGA-Top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240M100C5
+set_global_assignment -name TOP_LEVEL_ENTITY "FPGA-VGA-Top"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:17:13  FEBRUARY 15, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name SEARCH_PATH "c:\\users\\djh\\documents\\github\\fpga-vga\\library"
+set_global_assignment -name BDF_FILE "Library/Components/RamCell-16B.bdf"
+set_global_assignment -name BDF_FILE Library/Components/RAM.bdf
+set_global_assignment -name BDF_FILE "Library/Components/8-Bit-Register.bdf"
+set_global_assignment -name BDF_FILE Library/Components/1mhz_clock.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Tri8.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/SimpleDFlipFlop.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Or16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Or8Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Or8Bit.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Not16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux8Way16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux8Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux4Way16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux4Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/Mux.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/JKFlipFlop.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/DMux8Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/DMux4Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/DMux.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/DFlipFlop.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/AndMuxOr.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/And16.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/And8Bit1Way.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/And8Bit.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/4To2Encoder.bdf
+set_global_assignment -name BDF_FILE Library/Intermediates/2To4Decoder.bdf
+set_global_assignment -name BDF_FILE "Library/Primitives/Xor-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/Nand3-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/And-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/And4-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/50Mhz Clock Divider/divby10.bdf"
+set_global_assignment -name BDF_FILE "Library/50Mhz Clock Divider/divby5.bdf"
+set_global_assignment -name BDF_FILE "Library/50Mhz Clock Divider/divby2.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/Or-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/Not-primitive.bdf"
+set_global_assignment -name BDF_FILE "FPGA-VGA-Top.bdf"
+set_global_assignment -name BDF_FILE Library/Intermediates/GatedSRLatch.bdf
+set_global_assignment -name BDF_FILE "Library/Primitives/Nor-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/And3-primitive.bdf"
+set_global_assignment -name BDF_FILE "Library/Components/74193-4Bit-Counter.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/And5-primitive.bdf"
