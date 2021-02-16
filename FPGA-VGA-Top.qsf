@@ -57,6 +57,8 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
 set_global_assignment -name SEARCH_PATH "c:\\users\\djh\\documents\\github\\fpga-vga\\library"
+set_location_assignment PIN_12 -to CLK
+set_global_assignment -name BDF_FILE "Library/Components/74244-Octal-Buffer.bdf"
 set_global_assignment -name BDF_FILE "Library/Components/RamCell-16B.bdf"
 set_global_assignment -name BDF_FILE Library/Components/RAM.bdf
 set_global_assignment -name BDF_FILE "Library/Components/8-Bit-Register.bdf"
@@ -103,5 +105,18 @@ set_global_assignment -name BDF_FILE Library/Components/1hz_clock.bdf
 set_global_assignment -name BDF_FILE "Library/Components/Half-Hz_clock.bdf"
 set_global_assignment -name BDF_FILE "Library/50Mhz Clock Divider/divby8.bdf"
 set_global_assignment -name BDF_FILE Library/Components/ZeroPoint625Hz_clock.bdf
-set_location_assignment PIN_77 -to ModCLK
-set_location_assignment PIN_12 -to CLK
+set_global_assignment -name BDF_FILE "Library/Components/74138-Decoder.bdf"
+set_global_assignment -name BDF_FILE "74244-Octal-Buffer.bdf"
+set_global_assignment -name BDF_FILE "Library/Primitives/And8-primitive.bdf"
+set_location_assignment PIN_1 -to Blue510
+set_location_assignment PIN_2 -to Blue1K
+set_location_assignment PIN_3 -to Green510
+set_location_assignment PIN_4 -to Green1K
+set_location_assignment PIN_5 -to Green2K
+set_location_assignment PIN_6 -to Red510
+set_location_assignment PIN_7 -to Red1K
+set_location_assignment PIN_8 -to Red2K
+set_location_assignment PIN_15 -to VSync
+set_location_assignment PIN_16 -to NVSync
+set_location_assignment PIN_17 -to HSync
+set_location_assignment PIN_18 -to NHSync
