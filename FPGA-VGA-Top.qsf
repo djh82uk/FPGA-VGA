@@ -37,8 +37,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "MAX II"
-set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
 set_global_assignment -name TOP_LEVEL_ENTITY "FPGA-VGA-Top"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:17:13  FEBRUARY 15, 2021"
@@ -57,19 +57,19 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
 set_global_assignment -name SEARCH_PATH "c:\\users\\djh\\documents\\github\\fpga-vga\\library"
-set_location_assignment PIN_12 -to CLK
-set_location_assignment PIN_1 -to Blue510
-set_location_assignment PIN_52 -to Blue1K
-set_location_assignment PIN_3 -to Green510
-set_location_assignment PIN_53 -to Green1K
-set_location_assignment PIN_5 -to Green2K
-set_location_assignment PIN_6 -to Red510
-set_location_assignment PIN_7 -to Red1K
-set_location_assignment PIN_8 -to Red2K
-set_location_assignment PIN_15 -to VSync
-set_location_assignment PIN_16 -to NVSync
-set_location_assignment PIN_17 -to HSync
-set_location_assignment PIN_18 -to NHSync
+set_location_assignment PIN_R8 -to CLK
+set_location_assignment PIN_D6 -to Blue510
+set_location_assignment PIN_A6 -to Blue1K
+set_location_assignment PIN_B4 -to Green510
+set_location_assignment PIN_B5 -to Green1K
+set_location_assignment PIN_D5 -to Green2K
+set_location_assignment PIN_D3 -to Red510
+set_location_assignment PIN_C3 -to Red1K
+set_location_assignment PIN_A3 -to Red2K
+set_location_assignment PIN_E6 -to VSync
+set_location_assignment PIN_B3 -to NVSync
+set_location_assignment PIN_C6 -to HSync
+set_location_assignment PIN_A2 -to NHSync
 set_global_assignment -name BDF_FILE "Library/Components/74244-Octal-Buffer.bdf"
 set_global_assignment -name BDF_FILE "Library/Components/RamCell-16B.bdf"
 set_global_assignment -name BDF_FILE Library/Components/RAM.bdf
@@ -119,4 +119,25 @@ set_global_assignment -name BDF_FILE Library/Components/ZeroPoint625Hz_clock.bdf
 set_global_assignment -name BDF_FILE "Library/Components/74138-Decoder.bdf"
 set_global_assignment -name BDF_FILE "Library/Primitives/And8-primitive.bdf"
 set_global_assignment -name BDF_FILE "Library/Intermediates/Mux-Primitive.bdf"
-set_location_assignment PIN_21 -to TestCLK
+set_location_assignment PIN_A5 -to TestCLK
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Blue1K
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Blue510
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Green1K
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Green2K
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Green510
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to NHSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to NVSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Red1K
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Red2K
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Red510
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TestCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSync
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
